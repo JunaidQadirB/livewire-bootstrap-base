@@ -12,9 +12,11 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com"/>
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     @livewireStyles
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet"/>
+    @stack('styles')
 </head>
 <body>
 <div id="app">
@@ -80,5 +82,4 @@
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}" defer></script>
 @livewireScripts
-</body>
-</html>
+@stack('scripts')
